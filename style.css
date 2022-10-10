@@ -1,0 +1,771 @@
+/* Stile di default */
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;			
+}
+
+/* Font utilizzati */
+@font-face {
+    font-family: 'Quicksand';
+    src: url(quicksand.otf);	
+}
+
+@font-face {
+    font-family: 'Hello Pirates';
+    src: url(hellopirates.otf);    
+}
+
+@font-face {
+    font-family: 'Quicksand Bold';
+    src: url(quicksandbold.otf);	
+}
+
+@font-face {
+    font-family: 'Astral Sister';
+    src: url(astralsister.ttf);
+}
+
+/* Formattazione del testo */
+h1, h2, h3 {
+    color: #a6a6a6;
+}
+
+h1 {
+    text-align: center;	
+	font-family: 'Astral Sister', 'Bradley Hand', sans-serif;
+	font-weight: bold;
+    letter-spacing: 3pt; 
+    font-size: 3em;
+    font-style: normal;
+  	background-color: transparent;
+    text-shadow: 3px 2px black;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Quicksand Bold', Geneva, Futura, sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+    line-height: normal;
+    letter-spacing: 1pt;
+}
+
+h3 {
+    font-family: 'Quicksand Bold', Geneva, Futura, sans-serif;
+    font-size: 1.1em;
+    margin: 0;
+    line-height: normal;
+	letter-spacing: 0.8pt;
+}
+
+strong {
+	font-family: 'Quicksand Bold', Geneva, Futura, sans-serif;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: 0% 90%;
+}
+
+p {
+    margin-top: 2%;
+}
+
+hr {
+    background-image: url("manycolors.jpeg");
+    background-repeat: repeat;
+    background-size: 20%;
+    padding: 1%;
+}
+
+/* Link generici */
+a:link {
+    color: black;
+    text-decoration: none;
+    font-family: 'Quicksand Bold', Geneva, Futura, sans-serif;
+}
+a:active {
+    color: black;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: #fbd204;
+    text-decoration: underline;
+}
+
+/* Header generico */
+ol, ul {
+    list-style: none;
+}
+	
+li {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Contenuto dell'header */
+
+/* Menù */
+nav {
+    width: 100%;
+    top:0;
+	padding-top: 1.2%;
+    padding-bottom:1.2%;
+    display: inline;
+    position: fixed;
+    z-index:3;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+nav li {
+	margin: auto 2% auto 2%;
+	display: inline-block;
+	font-size: 0.9em;
+    position:relative;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li a:link {
+    font-family: 'Quicksand', Geneva, Futura, sans-serif;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color:black;
+    font-family: 'Quicksand Bold', Geneva, Futura, sans-serif;
+    text-shadow: 3px 3px 1px rgba(0,0,0,0.15);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    font-size: 0.85em;
+    opacity: 0.9;
+    z-index: 1;
+    width: 300%;
+    margin-left: -100%;
+    color: black;
+}
+
+.dropdown-content a:link {
+    padding: 1% 1%;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav img {
+    width: 25%;
+    border: 2px solid black;
+    padding: 1%;
+    float: left;
+    margin-top: -4%;
+    border-radius:50%;
+}
+
+/* Audio generico */
+audio {
+    box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+    border-radius: 50px;
+    display:flex;
+    margin:auto;
+}
+
+/* select generico */
+select {
+    margin: 5% auto 5% auto;
+    width: 100%;
+    font-family: 'Quicksand Bold', Geneva, Futura, sans-serif;
+    border: 2px solid #a6a6a6;
+}
+
+/* citazioni a titoli di opere */
+cite {
+    font-style: italic;
+}
+
+/* Body */
+body {
+	font-family: 'Quicksand', Geneva, Futura, sans-serif;
+	font-size: large;
+	width: 100%; 
+    min-height: 100%;   
+	line-height: 1.6;
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-size: 25% 100%;
+    word-wrap: break-word;
+}
+
+/* Contenuto del body */
+.entrata {
+    margin-bottom: 1%;
+    background-image: url("manycolors.jpeg");
+    background-repeat: repeat;
+    background-position: center top;
+    background-size: 20%;
+    padding: 3%;
+    position: relative;
+}
+
+#paginaIniziale {
+    padding: 5%;
+}
+
+blockquote {
+    font-family: 'Hello Pirates', 'Bradley Hand', sans-serif;
+    font-size: 2.0em;
+    text-align: center;
+    color: black;
+    margin-top:-3%;
+    background-color: whitesmoke;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 10px 8px 0px rgba(0,0,0,0.15);
+    opacity: 0.8;
+}
+
+.entrata p {
+    font-family: 'Astral Sister', 'Bradley Hand', sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+	font-size: 12em;
+    color: whitesmoke;
+    margin-top: 2%;
+    text-shadow: 5px 5px 5px black, 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+.entrata img {
+    width: 100px;
+}
+
+/* Stile comune nel body */
+.sinistra {
+    background-position: 0% 25%;
+}
+
+.sinistra h2 {
+    color: #fbd204;
+}
+
+.sinistra, .sinistra strong {
+    background-image: linear-gradient(120deg, #fbd204 0%, #fbd204 100%);
+}
+
+.destra {
+    background-position: 100% 0%;
+}
+
+.destra h2 {
+    color:#b380ff;
+}
+
+.destra, .destra strong {
+    background-image: linear-gradient(120deg, #b380ff 0%, #b380ff 100%); 
+}
+
+.entrata img, .bloccodomande img, #pulisci {
+    display:block;
+    margin:auto;
+}
+
+.freccia, .iconainfo {
+    width:8%;
+}
+
+.blocco {
+    text-align: left;
+    color: black;
+    margin: 0;
+    position: relative;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.blocchihome, .blocco, .definizione, .bloccocrediti {
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 10px 8px 0px rgba(0,0,0,0.15);
+    background-color: white;
+    border-left: 8px solid #a6a6a6;
+}
+
+.blocco div {
+    margin-top: 3%;
+}
+
+.blocco ul, .bloccocrediti ul  {
+    list-style-image: url('greenicon.png');
+    margin: 3%;
+}
+
+.blocco ul, .blocchistoria p {
+    margin-left: 35%;
+}
+
+.iconainfo {
+    cursor: help;
+    right: 1%;
+    top: 0%;
+    float: right;
+    padding: 1%;
+}
+
+.iconainfo:hover {
+    width: 9%;
+}
+
+.nascosta {
+    display: none;
+}
+    
+.aperta {
+    height: auto;
+    width:70%;
+    text-align: center;
+    margin:1% auto 1% auto;
+}
+
+#extrablocco h1, #bloccotriggers h1, #mic h1 {
+    margin-left: 9%;
+}
+
+.homeimg, .triggersimg, .imgstoria {
+    float: left;
+    width: 27%;
+}
+
+.homeimg, .triggersimg, .imgstoria, .microfoni {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    filter: grayscale(100%);
+}
+
+.lista li {
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+}
+
+.lista li, .blocchistoria, .fenomeni {
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.lista li:last-child, .blocchistoria:last-child, .fenomeni:last-child {
+    border: none;
+}
+
+.icons-buttons {
+    border: 2px solid black;
+    padding:1%;
+    box-shadow: none;
+    width: 65px;
+    border-radius:50%;
+}
+
+.icons-buttons:hover {
+    width: 75px;
+}
+
+.centrati, .bloccorisultato, .blocco a {
+    text-align:center;
+}
+
+.bloccorisultato {
+    padding: 0% 20% 0% 20%;
+    margin-bottom:5%;
+}
+
+.bloccorisultato ul {
+    margin: 2% 0% 2% 0%;
+    text-align:left;
+}
+
+/* index.html */
+#homesection {
+    background-color: transparent;
+    padding:0;
+    border:none;
+    border-radius:0px;
+    box-shadow:none;
+    filter:none;
+}
+
+.faqfrequenti {
+    margin: auto;
+    width: 100%;
+}
+
+.faqfrequenti p {
+    border: 1px solid black;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    display: inline-block;
+    font-family: 'Quicksand Bold', Geneva, Futura, sans-serif;
+}
+
+.homeimg {
+    margin: 5% 5% 15% 5%;
+}
+
+.faqfrequenti p:hover {
+    background-image: url("manycolors.jpeg");
+    background-size: 50%;
+    color: white;
+}
+
+.faqfrequenti p:active {
+    filter: grayscale(100%);
+}
+
+.description {
+    text-align: right;
+    margin: 5% 5% 3% 5%;
+    min-height: 200px;
+}
+
+/* triggers.html */
+#bloccotriggers .lista p {
+    margin-right: 15%;
+}
+
+.bottonisuoni img {
+    width: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.bottonisuoni img:hover{
+    width:45px;
+}
+
+.bottonisuoni {
+    float:right;
+    margin-right:5%;
+}
+
+.triggersimg {
+    margin: 17% auto auto 3%;
+}
+
+/* microfoni.html */
+.microfoni {
+    float: right;
+    margin: auto 4% 2% 4%;
+    width: 20%;
+}
+
+#mic ul{
+    margin-left: 5%;
+}
+
+/* storia.html */
+.blocchistoria {
+    margin-top:0;
+    padding: 0% 5% 5% 5%;
+}
+
+/* extra.html */
+.definizione {
+    margin:2% 5% 8% 5%;
+    border: 2px solid #a6a6a6;
+    float:right;
+    width: 30%;
+}
+
+.fenomeni {
+    padding-bottom: 5%;
+    margin: auto 5% auto 5%;
+}
+
+/* crediti.html */
+.bloccocrediti {
+    padding: 2% 6% 2% 6%;
+    margin:5% auto 2% auto;
+    text-align: left;
+    position: relative;
+    width: 90%;
+}
+
+.bodycrediti {
+    background-image: url("manycolors.jpeg");
+    background-repeat: repeat;
+    background-position: center top;
+    background-size: 50%;
+}
+
+.bloccocrediti div {
+    column-width: 350px;
+}
+
+.bloccocrediti img {
+    margin:-2% 2% 2% 2%;
+    float:right;
+    filter:none;
+    width:15%;
+    border-radius:50%;
+}
+
+/* gioco.html */
+.bloccodomande {
+    margin: 1% auto 0% auto;
+    padding: 0% 20% 0% 20%;
+}
+
+/* gioco.html e interattivita.html */
+#quizgame {
+    background-image: linear-gradient(300deg, white 80%, #fbd204 80%, #b380ff 95%);
+}
+
+#intrusogame {
+    background-image: linear-gradient(100deg, white 80%, #b380ff 80%,#fbd204 95%);
+}
+
+/* Footer */
+footer {
+    margin:5% auto auto 0%;
+    bottom: 0;
+    width: 100%;
+    background-color: #a6a6a6;
+    height: 20%;
+    clear: both;
+}
+
+footer p {
+    text-align:center;
+    color: white;
+    font-size:0.8em;
+    font-family: 'Quicksand Bold', Geneva, Futura, sans-serif;
+}
+
+footer p span{
+    font-variant: small-caps;
+}
+
+footer img {
+    width:40px;
+}
+
+footer img:hover {
+    width:42px;
+}
+
+/*    PER ALTRI DISPOSITIVI  */
+/* Visione fino ad una risoluzione massima di 3840px */
+@media screen and (max-width: 3840px){
+    .triggersimg {
+        margin-top: 5%;
+    }
+}
+
+/* Visione fino con una risoluzione compresa tra 1500 e 3840px */
+@media screen and (min-width: 1500px) and (max-width: 3840px){
+    /*body {
+        font-size: 1.4em;
+    }*/
+    .homeimg {
+        margin-bottom:10%;
+    }
+    .bottonisuoni img {
+        width: 50px;
+    }
+    .bottonisuoni img:hover {
+        width: 55px;
+    }
+    .blocchistoria {
+        padding-bottom:14%;
+    }
+    .icons-buttons {
+        width: 80px;
+    }
+    .icons-buttons:hover {
+        width:85px;
+    }
+    .bloccocrediti img {
+        margin-top: -4%;
+    }
+}
+
+/* Visione con una risoluzione minima di 1920 px */
+@media screen and (min-width: 1920px){
+    .homeimg {
+        margin-top:-3%;
+    }
+    #bloccotriggers ul li {
+        padding-bottom:13%;
+    }
+    #mic ul li {
+        padding-bottom:10%;
+    }
+}
+
+/* Visione con una risoluzione minima di 1200 px */
+@media screen and (min-width: 1200px){
+    .bloccocrediti { 
+        margin-top: 7%;
+    }
+}
+
+/* Visione con una risoluzione tra 897 e 1200 px */
+@media screen and (min-width: 897px) and (max-width: 1200px){
+    .blocco ul {
+        margin-left: 40%;
+    }
+    .bloccorisultato ul {
+        margin-left:auto;
+    }
+    .bloccocrediti {
+        margin-top: 10%;
+    }
+}
+
+/* Visione fino ad una risoluzione massima di 896 px */
+@media screen and (max-width: 896px){
+    body {
+        background-size:100%;
+    }
+    .blocco ul {
+        margin-left: 10%;
+    }
+    .homeimg, .triggersimg, .imgstoria {
+        width:70%;
+    }
+    .primop, .blocco ul {
+        margin-top: 77%;
+    }
+    .faqfrequenti p:first-child {
+        margin-top: 80%;
+    }
+    .homeimg {
+        margin: 2% auto 0% 17%; 
+    }
+    .faqfrequenti p {
+        display: block;
+    }
+    #bloccotriggers li:first-child {
+        margin-top: 95%;
+    }
+    .triggersimg {
+        margin-left: 15%;
+    }
+    .microfoni {
+        width: 40%;
+    }
+    #mic ul {
+        margin:5% 5% auto 10%;
+    }
+    .imgstoria {
+        margin:3% auto auto 15%;
+    }
+    .blocchistoria p {
+        margin-left: auto;
+    }
+    .definizione {
+        width:auto;
+        margin: auto 10% 5% 10%;
+    }
+    .bloccodomande{
+        padding: 0% 10% 0% 10%;
+    }
+    .bloccorisultato ul {
+        margin-top:auto;
+    }
+    .bloccocrediti {
+        margin-top: 12%;
+    }
+    .bloccocrediti img {
+        width:30%;
+    }
+}
+
+/* Visione fino ad una risoluzione massima di 670 px */
+@media screen and (max-width: 670px){
+    nav li {
+        font-size: 1.1em;
+    }
+    .entrata {
+        margin-top: 9%;
+        background-size: 50%;
+    }
+    .entrata p {
+        margin-top: 2%;
+    }
+    .iconainfo {
+        width: 15%;
+    }
+    .iconainfo:hover {
+        width: 17%;
+    }
+    .faqfrequenti {
+        width: 80%;
+     }
+    .faqfrequenti p:first-child {
+        margin-top:100%;
+    }
+    .bloccointruso ul {
+        margin-right:0%;
+    }
+    .bloccocrediti {
+        margin-top: 15%;
+    }
+    .bloccocrediti img {
+        width:40%;
+    }
+}
+
+/* Visione fino ad una risoluzione massima di 500px */
+@media screen and (max-width: 500px){
+    nav li {
+        font-size: 1.3em;
+    }
+    .dropdown-content {
+        visibility: hidden;
+    }
+    .entrata {
+        margin-top: 15%;
+    }
+    .entrata p:first-child {
+        font-size: 8em;
+    }
+    #faqAsmr {
+        margin-top: 5%;
+    }
+    .bloccocrediti {
+        margin-top: 20%;
+    }
+}
+
+/* Visione fino ad una risoluzione massima di 410px */
+@media screen and (max-width: 410px){
+    .entrata {
+        margin-top: 10%;
+    }
+    .entrata p:first-child {
+        margin-top: 15%;
+    }
+    .bloccocrediti {
+        margin-top: 37%;
+    }
+}
